@@ -1,0 +1,33 @@
+{
+  "name": "svg-editor",
+  "version": "0.1.0",
+  "description": "SVG editor",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mbr-dev-server --port=8060 ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadBrozzeR/svg-editor.git"
+  },
+  "keywords": [
+    "svg",
+    "editor",
+    "graphics",
+    "xml"
+  ],
+  "author": "MadBrozzeR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadBrozzeR/svg-editor/issues"
+  },
+  "homepage": "https://github.com/MadBrozzeR/svg-editor#readme",
+  "dependencies": {
+    "@types/node": "^20.9.3",
+    "mbr-serv-request": "^0.2.0",
+    "mbr-style": "^1.1.1",
+    "splux": "^1.5.0",
+    "typescript": "^5.3.2"
+  }
+}
