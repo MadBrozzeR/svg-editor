@@ -55,5 +55,9 @@ const ROUTER = {
 };
 
 export function server (request: Request) {
+  if (!request['serve']) {
+    // TODO Fix old server version
+    request = new Request(request.request, request.response);
+  }
   request.match(SRC_RE, getResource) || request.route(ROUTER);
 };
